@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;    
+}
+
+#LOGO-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4361ee;
+    margin: 0;
+}
+
+.LOGO-idk {
+    display: flex;
+    margin-left: 50px;
+}
+
+.LOGO-idk a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.LOGO-idk a:hover {
+    color: #3498db;
+}
+
+#search-bar {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#search-bar:focus {
+    border-color: #3498db;
+}
+
+
+.LOGO-buttons {
+    margin-left: auto;
+}
+
+.LOGO-buttons button {
+    background-color: #4361ee;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: auto 25px auto 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color color 0.3s, transform 0.2s;
+}
+
+.LOGO-buttons button:hover {
+    background-color: #3f37c9;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .LOGO-idk, .LOGO-buttons {
+        margin-top: 10px;
+    }
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-top: 10px;
+}
+
+.container p{
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 95%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.draft {
+    background: #ddd;
+    color: black;
+}
+
+.draft:hover {
+    background: #bbb;
+}
+
+.post {
+    background: #007bff;
+    color: white;
+}
+
+.post:hover {
+    background: #0056b3;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#checkbox{
+    width: auto;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobBuddy - Find Local Jobs</title>
+    <link rel="stylesheet" href="seeker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-handshake"></i></span>
+                <h1 class="logo-text">JobBuddy</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="seeker.html"><i class="fas fa-search"></i> Find Jobs</a></li>
+                    <li><a href="post.html"fas fa-building></i>Post Jobs</a></li>
+                    <li><a href="README.md"><i class="fas fa-question-circle"></i> About</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search jobs..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="btn btn-login" id="login-btn">Login</button>
+                <button class="btn btn-primary" id="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect <span>Local Job</span></h1>
+            <p>Discover opportunities in your community with JobBuddy</p>
+            
+            <div class="search-filters">
+                <div class="filter-group">
+                    <input type="text" placeholder="Job title, keywords" class="filter-input">
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="technology">Technology</option>
+                        <option value="design">Design</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="writing">Writing</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">All Locations</option>
+                        <option value="bhilai">Bhilai</option>
+                        <option value="patna">Patna</option>
+                        <option value="raipur">Raipur</option>
+                        <option value="delhi">Delhi</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-search">Search Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div id="jobList" class="job-list-container">
+            <!-- Hardcoded job cards will be moved here by JavaScript -->
+        </div>
+    </main>
+
+   <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>JobBuddy</h4>
+            <p>Connecting local talent with opportunities.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="README.md">About</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Job Seekers</h4>
+            <ul>
+                <li><a href="seeker.html">Find Jobs</a></li>
+                <li><a href="signin.html">Create Profile</a></li>
+                <!-- <li><a href="#">Job Alerts</a></li> -->
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Employers</h4>
+            <ul>
+                <li><a href="post.html">Post a Job</a></li>
+                <!-- <li><a href="#">Search Candidates</a></li> -->
+                <!-- <li><a href="#">Pricing</a></li> -->
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 JobBuddy. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="seeker.js"></script>
+</body>
+</html>
