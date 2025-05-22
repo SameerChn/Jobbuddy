@@ -318,7 +318,7 @@ app.delete('/api/jobs/:id', auth, async (req, res) => {
 
 // Serve frontend in production
 if (process.env.NODE_ENV === 'production') {
-  app.get('*', (req, res) => {
+  app.get('/{*any}', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
 }

@@ -50,11 +50,6 @@
 
 ---
 
-<<<<<<< HEAD
-
 ## 👨‍💻 Author
 
 **Sameer Kumar**
-=======
-Made by Sameer -->
->>>>>>> 33bc2eee9f0b1b423da4f9122dbc4bbda8365101
