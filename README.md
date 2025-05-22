@@ -52,4 +52,4 @@
 <!-- 
 ## 🙋‍♂️ Author
 
-Made with 💙 by [Your Name] -->
+Made by Sameer -->
