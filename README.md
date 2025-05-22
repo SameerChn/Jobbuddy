@@ -49,7 +49,8 @@
 - Protect image upload routes with auth
 
 ---
-<!-- 
-## 🙋‍♂️ Author
 
-Made with 💙 by [Your Name] -->
+
+## 👨‍💻 Author
+
+**Sameer Kumar**
