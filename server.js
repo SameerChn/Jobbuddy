@@ -16,16 +16,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // Environment variables
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://Test01:newpassword@cluster0.sfmv45z.mongodb.net/';
-const JWT_SECRET = process.env.JWT_SECRET || 'jobbuddy-secret-key';
+const JWT_SECRET = process.env.JWT_SECRET || 'your_very_secure_secret_key_here';
 const PORT = process.env.PORT || 3001;
 
-// Connect to MongoDB
-mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(() => console.log('Connected to MongoDB'))
-.catch(err => console.error('Could not connect to MongoDB', err));
+mongoose.connect(MONGODB_URI)
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('Could not connect to MongoDB', err));
 
 // Define Schemas
 const userSchema = new mongoose.Schema({
