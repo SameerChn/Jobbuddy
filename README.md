@@ -50,6 +50,10 @@
 
 ---
 
+## 🚧 The site is live but authentication is still under development.
+
+🔗 [JOBBUDDY](https://jobbuddy-r8nw.onrender.com)
+
 ## 👨‍💻 Author
 
 **Sameer Kumar**

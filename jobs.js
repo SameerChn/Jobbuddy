@@ -1,7 +1,7 @@
 // jobs.js
 import { getToken } from './auth';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = 'https://jobbuddy-r8nw.onrender.com/api';
 
 // Get all jobs
 export const getAllJobs = async (filters = {}) => {

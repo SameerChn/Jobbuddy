@@ -13,7 +13,7 @@ document.getElementById('category').addEventListener('change', function() {
     const loginBtn = document.getElementById('login-btn');
     
     // API URL
-    const API_URL = 'http://localhost:3001/api';
+    const API_URL = 'https://jobbuddy-r8nw.onrender.com/api';
 
     // Check if user is logged in
     const token = localStorage.getItem('token');
