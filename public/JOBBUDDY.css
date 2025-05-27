@@ -12,27 +12,60 @@ body {
 }
 
 /* Navigation */
+
 .Navbar {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
     align-items: center;
+    justify-content: space-between;
     padding: 1rem 2rem;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    gap: 1rem;
 }
+
+.LOGO-idk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.LOGO-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .LOGO-idk, .LOGO-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #search-bar {
+        width: 100%;
+    }
+}
+
 
 #LOGO-name {
     font-size: 1.8rem;
     font-weight: 700;
     color: #4361ee;
     margin: 0;
-}
-
-.LOGO-idk {
-    display: flex;
-    margin-left: 3rem;
 }
 
 .LOGO-idk a {
@@ -63,11 +96,6 @@ body {
     width: 250px;
 }
 
-.LOGO-buttons {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
 
 .LOGO-buttons button {
     background-color: #4361ee;
